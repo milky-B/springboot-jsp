@@ -1,0 +1,17 @@
+server:
+  port: 8084
+mybatis:
+  typeAliasesPackage: com.gdut.crm.pojo
+
+spring:
+  datasource:
+        username: root
+        password: root992112
+        driver-class-name:mysql: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/crm?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+        type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    view:
+      prefix: /WEB-INF/admin/
+      suffix: .jsp
+    static-path-pattern: /static/
